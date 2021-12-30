@@ -1,0 +1,23 @@
+<div 
+[style.height]="'100%'">
+<div
+fxLayout="row wrap"
+fxLayoutAlign="space-between  center"
+[style.padding]="'1em'"
+>
+    <div
+    fxFlex="15"
+    *ngFor="let topic of topics">
+        <mat-card
+         [style.margin-bottom]="'1em'"
+         >
+            <div  
+            class="card-alignment "
+            >
+            <mat-icon [style.margin-left]="'0.4em'" >home</mat-icon>
+            <label>{{topic?.name}}</label>
+            </div>
+        </mat-card>
+    </div>
+</div>
+</div>
